@@ -1,8 +1,7 @@
 # Tooling - part 2
 
 ## 1) На вкладке Network
-### Неоптимальные места
-#### Дублирование ресурсов
+### Дублирование ресурсов
 5 раз загружается одно и то же gif-изображение
 ![image](https://github.com/ColinBlake14/tooling-2/assets/90147314/3f0da632-526c-419c-85e4-9da9d6cc4a90)
 
@@ -12,11 +11,25 @@
 дважды грузим один шрифт
 ![image](https://github.com/ColinBlake14/tooling-2/assets/90147314/0258b5bf-2ca1-4087-9548-ef02d0a09a9c)
 
+### Лишний размер ресурса
 10 файлов из тех, чей размер больше 50kB грузится со сжатием gzip вместо br
 ![image](https://github.com/ColinBlake14/tooling-2/assets/90147314/458ef8d0-2ac0-440b-853f-eabbaaf14612)
 
 14 файлов из тех, чей размер больше 10kB грузится вообще без сжатия
 ![image](https://github.com/ColinBlake14/tooling-2/assets/90147314/52e3c658-95cd-413a-b91e-14fb70473ff8)
+
+### Медленно загружающиеся ресурсы
+время загрузки - 428ms
+![image](https://github.com/ColinBlake14/tooling-2/assets/90147314/794f3629-d1ca-4c64-8056-d483bc862066)
+
+картинки, загружающиеся около 1000ms
+![image](https://github.com/ColinBlake14/tooling-2/assets/90147314/d71b0668-b139-4ed3-bb17-60cc23113112)
+
+скрипт грузится около 450ms
+![image](https://github.com/ColinBlake14/tooling-2/assets/90147314/668c5f27-6cd0-4dae-ad31-270c9366c116)
+
+### Ресурсы, блокирующие загрузку
+![image](https://github.com/ColinBlake14/tooling-2/assets/90147314/1ba249cb-3a4c-4a42-b4b2-bae4fd7770d8)
 
 ## 2) На вкладке Performance
 ### Показатели:
